@@ -150,7 +150,7 @@ void checkCommand(){
 		else{
 			resetCommand();
 			HAL_UART_Transmit(&huart2, (void*)str, sprintf(str,"\r\nWrong Command\r\n"), 1000);
-			uart_state = IDLE;
+			uart_state = START;
 		}
 	}
 }

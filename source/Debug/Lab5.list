@@ -370,9 +370,9 @@ void checkCommand(){
  8000336:	490a      	ldr	r1, [pc, #40]	; (8000360 <checkCommand+0x84>)
  8000338:	480a      	ldr	r0, [pc, #40]	; (8000364 <checkCommand+0x88>)
  800033a:	f002 ff17 	bl	800316c <HAL_UART_Transmit>
-			uart_state = IDLE;
+			uart_state = START;
  800033e:	4b05      	ldr	r3, [pc, #20]	; (8000354 <checkCommand+0x78>)
- 8000340:	2206      	movs	r2, #6
+ 8000340:	2203      	movs	r2, #3
  8000342:	601a      	str	r2, [r3, #0]
 		}
 	}
